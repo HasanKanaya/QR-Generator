@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3498db;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shape {
+  background-color: #fff;
+  height: 260px;
+  max-width: 410px;
+  border-radius: 7px;
+  padding: 16px 25px;
+  transition: height 0.3s ease;
+}
+
+.shape header h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.shape header p {
+  margin-top: 5px;
+  color: #474747;
+  font-weight: 16px;
+}
+
+.shape .form {
+  margin: 20px 0 25px;
+}
+
+.shape .form :where(input, button) {
+  width: 100%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.shape .form input {
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+
+.shape .form button {
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: #3498db;
+}
+
+.shape .qr-gen {
+  display: flex;
+  padding: 33px 0;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.shape.active {
+  height: 530px;
+}
+
+.shape.active .qr-gen {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+/*# sourceMappingURL=style.css.map */
